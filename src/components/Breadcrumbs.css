@@ -1,0 +1,26 @@
+.breadcrumbs {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  position: absolute;
+  top: 80px; /* Adjust this value to move the breadcrumbs lower */
+  left: 10px; /* Optionally adjust this value to move the breadcrumbs horizontally */
+  font-size: 1.1rem; /* Set the font size for breadcrumb text */
+  font-family: Arial, sans-serif; /* Set the font family for breadcrumb text */
+}
+
+.breadcrumbs li {
+  margin-right: 4px;
+  font-weight: normal; /* Set the font weight, e.g., normal, bold */
+  color: #333; /* Set the color for breadcrumb text */
+}
+
+.breadcrumbs li::after {
+  content: '/';
+  margin-left: 4px;
+  color: #2b2a2a; /* Set the color for the separator */
+}
+
+.breadcrumbs li:last-child::after {
+  content: '';
+}
